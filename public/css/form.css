@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Literata-SemiBold";
+    
+    src: local("Literata-SemiBold"),
+         url("/fonts/Literata-SemiBold.woff2") format("woff2"),
+         url("/fonts/Literata-SemiBold.woff") format("woff");
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container_form {
+    width: 50%;
+    max-width: 900px;
+    max-height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    background: url('/images/books.jpeg')no-repeat center center;
+    background-size: cover;
+}
+
+.container_table {
+    width: 100%;
+    max-width: 1200px; 
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow-x: auto; 
+    box-sizing: border-box;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table, .table th, .table td {
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.title_form{
+    text-align: center;
+    color: #fff;
+    font-family: Literata-SemiBold;
+    font-size: 35px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+.btn_submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #BA1735;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #BA1735;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn_submit:hover {
+    background-color: #fff;
+    color: #BA1735;
+
+}
+
+@media(max-width: 992px){
+    .container_form {
+        width: 75%;
+    }
+}
+@media(max-width: 576px){
+    .container_form {
+        width: 100%;
+    }
+    .title_form{
+        font-size: 28px;
+    }
+    .td_string{
+        font-size: 14px;
+    }
+
+
+}
